@@ -1,4 +1,4 @@
-# issue Best Time to Buy and Sell Stock
+# issue 121
 
 class Solution:
 

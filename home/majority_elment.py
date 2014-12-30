@@ -1,4 +1,4 @@
-# issue Majority Element
+# issue 169 
 
 class Solution:
     # @param num, a list of integers

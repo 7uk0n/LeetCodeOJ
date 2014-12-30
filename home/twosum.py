@@ -1,4 +1,4 @@
-# issue Two Sum
+# issue 1
 
 class Solution:
 
