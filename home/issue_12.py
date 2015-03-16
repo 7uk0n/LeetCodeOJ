@@ -1,13 +1,10 @@
 __author__ = 'garfield'
 
+
 class Solution:
-    # @return a string
-    def intToRoman(self, num):
-        value_roman = {1000:"M", 900:"CM", 500:"D", 400:"CD",
-                       100:"C", 90:"XC", 50:"L", 40:"XL",
-                       10:"X", 9:"IX", 5:"V", 4:"IV", 1:"I"}
-        roman = ""
-        for v in [1000,900,500,400,100,90,50,40,10,9,5,4,1]:
-            roman += value_roman[v] * (num//v)
-            num %= v
-        return roman
+    # @param n, an integer
+    # @return an integer
+    def reverseBits(self, n):
+        return int(bin(n)[2:].zfill(32)[::-1], 2)
+
+print Solution().reverseBits_2(43261596)
