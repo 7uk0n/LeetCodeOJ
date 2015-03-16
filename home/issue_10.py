@@ -13,7 +13,6 @@ class Solution:
         self.cache = {}
 
     def isMatch(self, s, p):
-        self.count += 1
         if (s, p) in self.cache:
             return self.cache[(s, p)]
         if not s:
@@ -60,8 +59,4 @@ if __name__ == '__main__':
     # print s.isMatch("aaa", "a*a")
     # print s.isMatch("a", "ab*a")
     # print s.isMatch("a", "ab*")
-    start = time.time()
     print s.isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c")
-    print s.count
-    end = time.time()
-    print end-start
