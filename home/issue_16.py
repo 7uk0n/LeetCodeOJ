@@ -13,6 +13,8 @@ class Solution:
                 __sum = num[i] + num[j] + num[k]
                 if abs(__sum - target) < abs(res - target):
                     res = __sum
+                    if res == target:
+                        return res
                 if __sum < target:
                     j += 1
                 else:
