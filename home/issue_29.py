@@ -19,4 +19,4 @@ class Solution:
         return min(max(-27147483648, result), 2147483647)
 
 if __name__ == '__main__':
-    print Solution().divide(20,4)
+    print Solution().divide(20, 4)
