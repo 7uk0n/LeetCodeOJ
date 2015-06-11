@@ -1,3 +1,5 @@
+import itertools
+
 __author__ = 'garfield'
 
 
@@ -5,6 +7,8 @@ class Solution:
     # @param {integer} n
     # @return {string}
     def countAndSay(self, n):
+        return '1' if n==1 else ''.join([str(len(x))+x[0] for x in [list(g) for k, g in itertools.groupby(self.countAndSay(n-1))]])
+    def countAndSay_2(self, n):
         string = '1'
         result = '1'
         n -= 1
